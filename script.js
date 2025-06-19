@@ -11,4 +11,10 @@ app.post("/health-checkup", function(req, res) {
 
     res.send("you have" + kidneyLength + "kidneys")
 });
+// global catches
+app.use(function(err, req, res, next) {
+    res.json({
+        msg: "Sorry something is up with our server"
+    })
+})
 app.listen(3000);
