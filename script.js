@@ -13,6 +13,7 @@ app.post("/health-checkup", function(req, res) {
 });
 // global catches
 app.use(function(err, req, res, next) {
+    errorCount ++;
     res.json({
         msg: "Sorry something is up with our server"
     })
