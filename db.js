@@ -24,12 +24,12 @@ app.post("/signup", async  function(req, res) {
     email: username,
     password: password
   });
-})
 
+  await user.save();
 
-user.save();
-res.json({
+  res.json({
   msg: "User created successfully"
+  })
 })
 
 app.listen(3000);
