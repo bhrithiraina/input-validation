@@ -1,3 +1,5 @@
+const express = require("express");
+
 const mongoose = require("mongoose");
 
 mongoose.connect("mongodb+srv://bhrithiraina:bhrithi123@cluster0.qyfkbus.mongodb.net/userappnew?")
