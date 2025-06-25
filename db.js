@@ -9,7 +9,7 @@ mongoose.connect("mongodb+srv://bhrithiraina:bhrithi123@cluster0.qyfkbus.mongodb
 const User = mongoose.model('Users', { name: String, email: String, password: String });
 
 app.post("/signup", async  function(req, res) {
-  const username = req.body.usernmae;
+  const username = req.body.username;
   const password = req.body.password;
   const name = req.body.name;
 
@@ -31,3 +31,5 @@ user.save();
 res.json({
   msg: "User created successfully"
 })
+
+app.listen(3000);
