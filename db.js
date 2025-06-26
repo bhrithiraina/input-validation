@@ -13,8 +13,10 @@ app.post("/signup", async  function(req, res) {
   const password = req.body.password;
   const name = req.body.name;
 
+  // User.update, User.delete
+
   const existingUser = await User.findOne({email: username});
-  
+  // CRUD => Create, Update, Read, Delete
   if (existingUser) {
     return res.status(400).send("Username already exists")
   }
