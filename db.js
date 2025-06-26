@@ -35,3 +35,11 @@ app.post("/signup", async  function(req, res) {
 })
 
 app.listen(3000);
+
+
+
+// why can't we store data in a file or notepad , why we use databases
+// 1. you don't have a standard way to store data 
+// 2. Hard to distribute
+// 3. Dbs are optimised for reads and writes
+// 4. Dbs have logic for indexing to make some queries faster
