@@ -12,7 +12,7 @@ function isOldEnoughMiddleware(req, res, next) {
     }
 }
 
-
+app.use(isOldEnoughMiddleware);
 
 app.get("/ride1", function(req, res) {
         res.json({
@@ -26,7 +26,6 @@ app.get("/ride2", function(req, res) {
         })
 })
 
-app.use(isOldEnoughMiddleware);
 
 app.listen(3000); 
 
