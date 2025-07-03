@@ -27,6 +27,8 @@ const express = require("express");
 const zod = require("zod");
 const app = express();
 
+app.use(express.json());
+
 // if this is an array of number with atleast 1 input, return true, else return false
 function validateInput(obj) {
     const schema = zod.object({
