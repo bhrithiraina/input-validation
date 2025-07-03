@@ -23,7 +23,9 @@
 
 // app.listen(3001);
 
+const express = require("express");
 const zod = require("zod");
+const app = express();
 
 // if this is an array of number with atleast 1 input, return true, else return false
 function validateInput(obj) {
