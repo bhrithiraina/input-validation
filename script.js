@@ -10,6 +10,7 @@ app.post("/health-checkup", function(req, res) {
 
     res.send("you have" + kidneyLength + "kidneys")
 });
+
 // global catches
 app.use(function(err, req, res, next) {
     errorCount ++;
