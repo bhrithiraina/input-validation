@@ -12,7 +12,7 @@ app.get("/health-checkup", function (req, res) {
 
     if (kidneyId !== 1 && kidneyId !== 2) {
     res.status(400).json({ msg: "Somethings up with your input" });
-    } else{
+    } else {
        // do something with kidney here 
         res.json({
             msg: "your kidney is fine"
