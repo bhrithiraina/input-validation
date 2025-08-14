@@ -14,7 +14,7 @@ app.get("/health-checkup", function (req, res) {
     res.status(400).json({ msg: "Somethings up with your input" });
     } else {
        // do something with kidney here 
-        res.json({
+        res.json ({
             msg: "your kidney is fine"
         })
     }
